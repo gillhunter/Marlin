@@ -36,7 +36,7 @@
    Advanced settings can be found in Configuration_adv.h
 
 */
-#define CONFIGURATION_H_VERSION 020005
+#define CONFIGURATION_H_VERSION 020006
 
 //===========================================================================
 //============================= Getting Started =============================
@@ -972,7 +972,7 @@
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define MIN_PROBE_EDGE 10
+#define PROBING_MARGIN 10
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -1223,7 +1223,7 @@
    Normally G28 leaves leveling disabled on completion. Enable
    this option to have G28 restore the prior leveling state.
 */
-//#define RESTORE_LEVELING_AFTER_G28
+#define RESTORE_LEVELING_AFTER_G28
 
 /**
    Enable detailed logging of G28, G29, M48, etc.
